@@ -57,8 +57,15 @@ with(power_consum,
 
 # Plot 4 cell 2 2 
 # draw data plot on canvas
-with(power_consum,barplot(Global_reactive_power),xlab="datetime",ylab="Global_reactive_power")
+with(power_consum,
+      plot(DateTime,Global_reactive_power,type="h", 
+     xlab="datetime")) 
+     
+
+par(mfcol=c(1,1))
+
 # close plotting device (png-file)
+
 dev.off()
 
 Sys.setlocale("LC_TIME",orig.locale) # restore original locale seting

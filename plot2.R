@@ -11,6 +11,7 @@ Sys.setlocale("LC_TIME","C")
 # setup png device
 png(filename = file,width=480,height=480,bg="transparent")
 # draw empty canvas (type="n") using data  for calculations
+par(mfcol=c(1,1))
 with(power_consum,
      plot(DateTime,Global_active_power,type="n", xlab="",
           ylab= "Global Active Power (killowatts)"))
