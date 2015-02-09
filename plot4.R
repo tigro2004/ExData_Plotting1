@@ -58,7 +58,7 @@ with(power_consum,
 # Plot 4 cell 2 2 
 # draw data plot on canvas
 with(power_consum,
-      plot(DateTime,Global_reactive_power,type="h", 
+      plot(DateTime,Global_reactive_power,type="l", 
      xlab="datetime")) 
      
 
